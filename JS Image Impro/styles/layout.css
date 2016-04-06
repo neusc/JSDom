@@ -1,0 +1,50 @@
+body{
+    font-family: "Helvetica","Arial",serif;
+    color: #333;
+    background-color: #ccc;
+    margin: 1em 10%;
+}
+
+h1{
+    color: #333;
+    background-color: transparent;
+}
+
+a{
+    color: #c60;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;      /*上划线、下划线、穿过文本*/
+}
+
+ul{
+    padding: 0;     /*边框和内容区之间*/
+}
+
+li{
+    float: left;    /*应用于块级元素,在文档流左侧浮动，文档流绕其而行*/
+    padding: 1em;
+    list-style: none;   /*列表项目标记*/
+}
+#placeholder{
+    width: 600px;
+    height: 500px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    display: block;    /*block块级元素，前后带有换行符*/
+    clear: both;
+}
+
+#imagegallery{
+    list-style:none;
+}
+
+#imagegallery li{
+    display: inline;    /*内联元素：元素放进文档流里随文档流动，删除前面元素，后面元素自动补上，可以并排显示不必折行，不能设置宽和高*/
+}
+
+#imagegallery li a img{
+    border: 0;
+}

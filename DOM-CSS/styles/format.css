@@ -1,0 +1,42 @@
+body{
+    font-family:"Helvetica", "Arial", sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+table{
+    /*padding就是内容与边框的空隙.而margin 则是模块与模块的空隙*/
+    margin:auto;
+    border: 1px solid #699;
+}
+caption{
+    margin: auto;
+    padding: .2em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+th{
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    border:1px dotted #699;
+    background-color: #9cc;
+    color: #000;
+}
+th,td{
+    width: 10em;
+    padding: .5em;
+}
+.odd{
+    background-color: #ffc;
+}
+
+
+
+/*鼠标悬停效果,用hignlightRows函数代替*/
+/*tr:hover{
+    font-weight: bold;
+}*/
+
+/*奇数行偶数行交替显示格式，用stripTables函数代替*/
+/*tr:nth-child(odd) {background-color: #ffc}*/
+/*tr:nth-child(even) {background-color: #fff}*/

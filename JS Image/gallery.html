@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet"  href="styles/layout.css" media="screen"/>
+</head>
+<body>
+    <h1>Snapshots</h1>
+    <ul>
+        <!-- return false是为了防止触发链接的默认行为,false表示此链接没有被点击-->
+        <li><a href="images/fireworks.jpg"  class="showpic"  title="a fireworks display">Fireworks</a> </li>
+        <li><a href="images/coffee.jpg" class="showpic" title="A cup of black coffee">Coffee</a></li>
+        <li><a href="images/rose.jpg" class="showpic" title="A red,red rose">Rose</a></li>
+        <li><a href="images/bigben.jpg" class="showpic" title="The famous clock">Big Ben</a></li>
+        <!-- 缺少return false后，两种行为都会触发-->
+        <li><a href="http://www.baidu.com" class="popup">Example</a></li>
+        <!-- 将javascript代码分离出去-->
+    </ul>
+    <img id="placeholder"  src="images/placeholder.gif" alt="my image gallery"/>
+    <p id="description">Choose an image.</p>
+    <!-- 减少外部文件引用次数，合并为同一个js文件，提高性能-->
+    <script  src="scripts/showPic.js"></script>
+
+
+</body>
+</html>

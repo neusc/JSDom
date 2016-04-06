@@ -1,0 +1,15 @@
+#slideshow{
+    width:100px;
+    height: 100px;
+    /*relative：生成相对定位的元素，通过top,bottom,left,right的设置相对于其正常位置进行定位。
+    定位为relative的元素脱离正常的文本流中，但其在文本流中的位置依然存在。
+    定位为absolute的层脱离正常文本流，但与relative的区别是其在正常流中的位置不在存在,其后元素自动补上。
+    relative定位的层总是相对于其最近的父元素，无论其父元素是何种定位方式。
+    对于absolute定位的层总是相对于其最近的定义为absolute或relative的父层，而这个父层并不一定是其直接父层。
+    如果其父层中都未定义absolute或relative，则其将相对body进行定位*/
+    position: relative;
+    overflow: hidden;
+}
+#preview{
+    position: absolute;
+}

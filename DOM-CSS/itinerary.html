@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/format.css" media="screen">
+</head>
+<body>
+    <table>
+        <caption>Itinerary</caption>
+        <thead>
+        <tr>
+            <th>When</th>
+            <th>Where</th>
+        </tr>
+        </thead>
+        <!--tbody可以一部分显示，不必全部下载完一起显示，对大表格有优化显示作用-->
+        <tbody>
+        <tr>
+            <td>June 9th</td>
+            <td>Portland,<abbr title="Oregon">OR</abbr></td>
+        </tr>
+        <tr>
+            <td>June 10th</td>
+            <td>Seattle,<abbr title="Washington">WA</abbr></td>
+        </tr>
+        <tr>
+            <td>June 12th</td>
+            <td>Sacramento,<abbr title="California">CA</abbr></td>
+        </tr>
+        </tbody>
+    </table>
+    <script src="scripts/addLoadEvent.js"></script>
+    <script src="scripts/stripeTables.js"></script>
+    <script src="scripts/displayAbbreviations.js"></script>
+    <script src="scripts/highlightRows.js"></script>
+</body>
+</html>
+<thead>
+
+<!--thread标签定义表格的表头。该标签用于组合 HTML 表格的表头内容。-->
+
+<!--thead 元素应该与 tbody 和 tfoot 元素结合起来使用。-->
+
+<!--tbody 元素用于对 HTML 表格中的主体内容进行分组，而 tfoot 元素用于对 HTML 表格中的表注（页脚）内容进行分组。-->
